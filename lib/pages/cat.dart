@@ -35,7 +35,7 @@ class _CatState extends State<Cat> {
           borderRadius: BorderRadius.only(
             bottomLeft: Radius.circular(25),
             bottomRight: Radius.circular(25)
-          )
+          ),
         ),
         backgroundColor: Colors.green.shade700,
         leading: IconButton(onPressed: (){},
@@ -63,8 +63,11 @@ class _CatState extends State<Cat> {
                 indexo: 0, onTap: () { 
                   setState(() {
                     _currentInd=0;
+
                   });
+
                  },
+                 title: 'Select Category',
               ),
               StepperComponent(
                 currentIndex: _currentInd,
@@ -73,6 +76,7 @@ class _CatState extends State<Cat> {
                     _currentInd = 1;
                   });
                  },
+                 title: 'Select Fabric',
               ),
               StepperComponent(
                 currentIndex: _currentInd,
@@ -81,6 +85,7 @@ class _CatState extends State<Cat> {
                     _currentInd = 2;
                   });
                  },
+                 title: 'Select Garment',
               ),
               StepperComponent(
                 currentIndex: _currentInd,
@@ -89,6 +94,7 @@ class _CatState extends State<Cat> {
                     _currentInd = 3;
                   });
                  }, 
+                 title: 'Customization',
               ) 
             ],
           ),
@@ -143,13 +149,16 @@ class StepperComponent extends StatelessWidget {
   //for current num in the circle
   int indexo;
   int currentIndex;
+  String title;
 
   VoidCallback onTap;
+
   StepperComponent({
     super.key,
     required this.currentIndex,
     required this.indexo,
-    required this.onTap
+    required this.onTap,
+    required this.title,
   }); 
 
   @override
@@ -181,7 +190,7 @@ class StepperComponent extends StatelessWidget {
           ))
         ],
       ),
-      Text('Select Category ', style: TextStyle(fontSize: 13),),
+      Text(title, style: TextStyle(fontSize: 13),),
       
       
 
