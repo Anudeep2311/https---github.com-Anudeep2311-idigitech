@@ -2,6 +2,8 @@ import 'package:comp_demo/pages/cat.dart';
 import 'package:comp_demo/paint.dart';
 import 'package:flutter/material.dart';
 
+import 'pages/shopping_bag.dart';
+
 void main() {
   runApp(const MyApp());
 }

@@ -1,3 +1,4 @@
+import 'package:comp_demo/grid_view_list.dart';
 import 'package:curved_labeled_navigation_bar/curved_navigation_bar.dart';
 import 'package:curved_labeled_navigation_bar/curved_navigation_bar_item.dart';
 
@@ -177,9 +178,22 @@ class _CatState extends State<Cat> {
                     return Center(
                         //**************child:Text('Page Counter ${index}')************
                         );
-                  })))
+                  }
+                  )
+                  )
+                  ),
+                  SizedBox(
+                      height: 20,
+                  ),
+                  GridViewItemsList(),
         ],
       ),
+
+
+    
+
+
+
 
       //BOTTOM NAVIGATION BAR CODE STARTS HERE//
       bottomNavigationBar: CurvedNavigationBar(
@@ -222,11 +236,15 @@ class _CatState extends State<Cat> {
           //Text('Home'),
         ],
       ),
+      
     );
+    
   }
+  
 }
 
-//THE HEAD NUMBER COUNT PROGRESS//
+
+
 
 class StepperComponent extends StatelessWidget {
   //for current num in the circle
