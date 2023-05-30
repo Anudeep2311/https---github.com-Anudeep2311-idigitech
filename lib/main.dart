@@ -1,3 +1,4 @@
+import 'package:comp_demo/pages/bag.dart';
 import 'package:comp_demo/pages/cat.dart';
 import 'package:comp_demo/paint.dart';
 import 'package:flutter/material.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Shopping',
       theme: ThemeData(primarySwatch: primary ),
-      home: Cat(),
+      home: BagPage(),
     );
   }
 }
