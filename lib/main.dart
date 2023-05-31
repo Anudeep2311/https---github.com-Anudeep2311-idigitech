@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Shopping',
       theme: ThemeData(primarySwatch: primary ),
-      home: BagPage(),
+      home: Cat(),
     );
   }
 }
